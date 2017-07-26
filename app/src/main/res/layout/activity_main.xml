@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rksharma.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="SIGN UP"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Name*"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="Username*"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="Password*"/>
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="Re-enter Password*" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="College Name" />
+
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4" />
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="Mobile No*" />
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4" />
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/et7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Reset"
+        android:onClick="refresh"
+        android:layout_alignBaseline="@+id/b1"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_toRightOf="@+id/t1"
+        android:layout_toEndOf="@+id/t1" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Submit"
+        android:onClick="register"
+        android:layout_below="@+id/et7"
+        android:layout_toRightOf="@+id/text5"
+        android:layout_toEndOf="@+id/text5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/et7"
+        android:layout_alignLeft="@+id/et7"
+        android:layout_alignStart="@+id/et7"
+        android:id="@+id/et8" />
+
+    <TextView
+        android:text="Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/et7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
